@@ -3,6 +3,7 @@ body {
     height: 147vh;
     margin: 0;
 }
+
 header {
     height: 50px;
     width: 960px;
@@ -11,29 +12,36 @@ header {
     padding-top: 10px;
     display: flex;
 }
+
 header img {
     width: 120px;
 }
+
 ul {
     list-style-type: none;
     padding-left: 0;
     display: flex;
 }
+
 nav {
     margin-left: 800px;
 }
+
 li {
     margin: 10px;
 }
+
 div#mainvisual {
     width: 100%;
     height: 600px;
 }
+
 #mainvisual img {
     width: 100%;
     object-fit: cover;
     height: 600px;
 }
+
 section#about {
     width: 960px;
     margin: 0 auto;
@@ -41,6 +49,7 @@ section#about {
     padding: 0 4%;
     margin-top: 65px;
 }
+
 #about h2 {
     width: 115px;
     margin: 0 auto;
@@ -49,17 +58,20 @@ section#about {
     border-bottom: solid 1px;
     color: #000000ba;
 }
+
 .about {
     height: 120px;
     margin-top: 30px;
     display: flex;
 }
+
 #about img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-left: 200px;
 }
+
 h3 {
     /* margin-left: 10px; */
     font-size: 95%;
@@ -67,17 +79,28 @@ h3 {
     margin-top: 10px;
     margin-bottom: 0;
 }
+
 div#content {
-    margin-left: 80px;
+    margin-left: 30px;
 }
+
 #content p {
     font-size: 14px;
     margin-top: 5px;
 }
+
+
 /*#about p {*/
+
+
 /*    margin-left: -150px;*/
+
+
 /*    margin-top: 40px;*/
+
+
 /*}*/
+
 #bicycle h2 {
     width: 115px;
     margin: 0 auto;
@@ -86,6 +109,7 @@ div#content {
     border-bottom: solid 1px;
     color: #000000ab;
 }
+
 #bicycle h3 {
     /* margin-left: 10px; */
     font-size: 95%;
@@ -93,17 +117,21 @@ div#content {
     margin-top: 10px;
     margin-bottom: 0;
 }
-.bicycle{
+
+.bicycle {
     width: 300px;
     height: 200px;
 }
+
 #bicycle p {
     text-align: center;
 }
+
 footer {
     text-align: center;
     font-size: 10px;
 }
+
 section#bicycle {
     width: 960px;
     margin: 0 auto;
@@ -111,10 +139,133 @@ section#bicycle {
     padding: 0 4%;
     margin-top: -20px;
 }
+
 a {
-text-decoration: none;
-color: #24292e;
+    text-decoration: none;
+    color: #24292e;
 }
+
 a:hover {
-opacity: 0.7;
+    opacity: 0.7;
+}
+
+
+/*スマホ　縦からは */
+
+@media screen and (max-width: 480px) {
+    html {
+        width: 100vw;
+        height: 309vh;
+    }
+    body {
+        height: 147vh;
+        margin: 0;
+        width: 100vw;
+    }
+    header {
+        height: 38px;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0px 3%;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        display: flex;
+    }
+    header img {
+        width: 30vw;
+    }
+    nav {
+        margin-left: 23vw;
+    }
+    header ul {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header li {
+        /* margin: 20px; */
+        font-size: 15px;
+    }
+    main {
+        width: 100vw;
+    }
+    div#mainvisual {
+        width: 100vw;
+        height: 600px;
+    }
+    #mainvisual img {
+        width: 100vw;
+        object-fit: cover;
+        height: 600px;
+    }
+    section#bicycle {
+        width: 100vw;
+        margin: 0 auto;
+        height: 970px;
+        padding: 0 0 !important;
+        margin-top: 60px;
+    }
+    .bicycle {
+        width: 100%;
+        /* height: 200px; */
+    }
+    section#about {
+        width: 100vw;
+        /* margin: 0 auto; */
+        height: 295px;
+        padding: 5px 0px !important;
+    }
+    h3 {
+        margin-left: 15px;
+        font-size: 95%;
+        /* text-align: center; */
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #bicycle ul {
+        list-style-type: none;
+        padding-left: 0;
+        display: block;
+        padding: 6vw;
+    }
+    #bicycle li {
+        margin: 0;
+    }
+    #about h2 {
+        width: 34vw;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 35px;
+        border-bottom: solid 1px;
+        color: #000000ba;
+    }
+    .about {
+        height: 120px;
+        margin-top: 40px;
+        display: block;
+        width: 100vw;
+    }
+    div#content {
+        margin-left: 1px;
+        padding: 1vw;
+        width: 100vw;
+    }
+    #content p {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 14px;
+    }
+    #about img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 129px;
+    }
+    footer {
+        text-align: center;
+        font-size: 10px;
+        width: 100vw;
+    }
 }
